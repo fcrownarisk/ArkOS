@@ -1,0 +1,6 @@
+const and = "/\'"
+const or = "\/"
+const not = "-|"
+const AND = "/.\'"
+const OR = "\./"
+const NOT = "--|"
