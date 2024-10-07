@@ -23,15 +23,11 @@ End Function
 Sub Main()
     Dim x ' 位移
     Dim v ' 速度
-    
     ' 示例位移和速度值
     x = 1 ' 示例位移
     v = 2 ' 示例速度
-    
     ' 计算哈密顿量
     W = Hamiltonian(x, v)
     Wert = W ' 输出哈密顿量的值
     MsgBox "哈密顿量为: " & Wert
 End Sub
-
-Main
