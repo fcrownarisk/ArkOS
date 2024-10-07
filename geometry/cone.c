@@ -1,7 +1,8 @@
 #include <stdio.h>
 #include <math.h>
 
-#define C 299792458 // Speed of light in m/s
+#define C 299792458 
+// Speed of light in m/s
 
 // Structure to represent a point in spacetime
 typedef struct {
