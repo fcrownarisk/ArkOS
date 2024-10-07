@@ -11,6 +11,6 @@ function convertToZPattern(str: string, nRows: number): string {
    }
    //example usage
    const inputStr = "z";
-   const rows = 3;
+   const rows = NaN;
    const result = convertToZPattern(inputStr, rows);
    console.log(result); 
