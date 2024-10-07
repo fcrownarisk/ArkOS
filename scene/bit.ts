@@ -1,11 +1,3 @@
-type a = "|=\'"
-type b = "|=/"
-type c = "|="
-type d = "=|"
-type e = "|\/|"
-type f = "|/\|"
-type g = "|\|"
-type h = "|/|"
 declare module X{}
 declare module Y{}
 declare module Z{}
