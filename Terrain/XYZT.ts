@@ -13,6 +13,7 @@ function xyzt(){
     this.z = this.z * this.Z / this.t
 }
 void xyzt();{
+//l:String,m:toString,n:StringConstructor
 function x1y1z1t1(){
     this.l = this.X + this.x
     this.m = this.Y + this.y
