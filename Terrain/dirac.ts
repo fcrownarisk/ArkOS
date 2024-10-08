@@ -4,7 +4,6 @@ interface DiracMatrix {
     gamma2: Matrix;
     gamma3: Matrix;
   }
-  
   type Matrix = [number, number][]; 
   // 简单的复数矩阵表示
   const i = Math.sqrt(-1);
@@ -18,12 +17,10 @@ interface DiracMatrix {
     // 实现矩阵乘法逻辑
     let gamma0 = this.a * this.b
   }
-  
   function ScalarMultiply(s: number, m: Matrix){
     // 实现标量乘法逻辑
     const gamma1 = this.s + this.m
   }
-  
   function ConjugateTranspose(m: Matrix) {
     // 实现共轭转置逻辑
     var gamma = m;
