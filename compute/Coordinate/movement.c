@@ -11,37 +11,30 @@ typedef struct {
 void moveForward(Position *pos) {
     pos->y++;
 }
-
 // Function to move backward
 void moveBackward(Position *pos) {
     pos->y--;
 }
-
 // Function to move left
 void moveLeft(Position *pos) {
     pos->x--;
 }
-
 // Function to move right
 void moveRight(Position *pos) {
     pos->x++;
 }
-
 // Function to move up
 void moveUp(Position *pos) {
     pos->z++;
 }
-
 // Function to move down
 void moveDown(Position *pos) {
     pos->z--;
 }
-
 // Function to print current position
 void printPosition(Position pos) {
     printf("Current position: (%d, %d, %d)\n", pos.x, pos.y, pos.z);
 }
-
 // Function to visualize movement
 void visualizeMovement(Position pos) {
     printf("Top-down view (x-y plane):\n");
@@ -81,7 +74,6 @@ int main() {
     printPosition(currentPos);
     visualizeMovement(currentPos);
     
-
     moveLeft(&currentPos);
     moveRight(&currentPos);
     printf("After moving right and up:\n");
