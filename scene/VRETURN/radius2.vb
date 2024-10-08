@@ -7,6 +7,3 @@ Imports VERETURNNNNNN
 Function 
    Return Value
 End Function FunctionName(ParameterList) As ReturnType
-Function 
-
-   
