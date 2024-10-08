@@ -4,7 +4,6 @@ class ComplexNumber {
 function discreteFourierTransform(signal: number[]): ComplexNumber[] {
     const n = signal.length;
     const result: ComplexNumber[] = new Array(n);
-   
     for (let k = 0; k < n; k++) {
        let sum = 0;
        for (let t = 0; t < n; t++) {
