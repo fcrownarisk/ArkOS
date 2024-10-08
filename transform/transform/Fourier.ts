@@ -12,6 +12,5 @@ function discreteFourierTransform(signal: number[]): ComplexNumber[] {
        }
        result[k] = new ComplexNumber(sum, 0);
     }
-   
     return result;
    }
