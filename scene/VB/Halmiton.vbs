@@ -16,7 +16,6 @@ Function Hamiltonian(x, v)
 End Function
 Sub Main()
     Dim x ' 位移
-    Dim v ' 速度
-    ' 示例
+    Dim v ' 速度 ' 示例
     x = 1 v = 1 W = Hamiltonian(x, v)
 End Sub
