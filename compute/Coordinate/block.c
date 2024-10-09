@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <math.h>
 
-#define PI 3.14159265358979323846
+#define PI 3.1415926
 
 // Structure to represent a point in spherical coordinates
 typedef struct {
