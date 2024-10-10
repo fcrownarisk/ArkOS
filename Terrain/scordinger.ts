@@ -1,5 +1,5 @@
 // 定义物理量类型
-interface Position {
+  interface Position {
     x: number;
   }
   interface Momentum {
@@ -27,7 +27,7 @@ interface Position {
     // 这里可以定义具体的势能表达式
     return 0; // 例如，自由粒子的势能为0
   }
-  // 不含时薛定谔方程的TimeIndependentSchrodingerEquation函数
+  // 不含时薛定谔方程的函数TimeIndependentSchrodingerEquation
   function TimeIndependentSchrodingerEquation(waveFunction: WaveFunction): void {
     const psi = waveFunction;
     const E = waveFunction.E;
