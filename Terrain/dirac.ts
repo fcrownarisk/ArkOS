@@ -15,15 +15,15 @@ interface DiracMatrix {
   }
   function Multiply(a: Matrix, b: Matrix){
     // 实现矩阵乘法逻辑
-    let gamma0 = this.a * this.b
+    let gamma4 = this.a * this.b
   }
-  function ScalarMultiply(s: number, m: Matrix){
+  function ScalarMultiply(c: number, d: Matrix){
     // 实现标量乘法逻辑
-    const gamma1 = this.s + this.m
+    const gamma5 = this.c + this.d
   }
-  function ConjugateTranspose(m: Matrix) {
+  function ConjugateTranspose(e:Matrix ,f: number) {
     // 实现共轭转置逻辑
-    var gamma = m;
+    var gamma6 = this.e - this.f
   }
   function CheckAnticommutation(dm: DiracMatrix): boolean {
     for (let i = 0; i < 4; i++) {
