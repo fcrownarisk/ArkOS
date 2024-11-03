@@ -1,5 +1,5 @@
-# ArkknightOS
-a first attempt shot on Arkknight Final Destination(End Feild)
+# ArkOS
+a first attempt shot on Arkknight
 I attempt to build brand new OS named ArkOS 
 Scene in the map including 
    
