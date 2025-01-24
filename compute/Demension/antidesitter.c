@@ -46,7 +46,7 @@ void visualizeCurvature(int size) {
 
 int main() {
     printf("Anti-de Sitter Space Description\n");
-    printf("================================\n\n");
+    printf("================================\n");
 
     // Calculate metric for a specific point
     AdSPoint p = {0.5, 0.3, 0.3, 0.5};
