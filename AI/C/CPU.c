@@ -1,12 +1,12 @@
 #include "bin.c"
 #include "RETURN.c"
 short abcdef(){
-   const a = 'w1';
-   const b = 'w2';
-   const c = 'w3';
-   const d = "w1'";
-   const e = "w2'";
-   const f = "w3'"; 
+   char a = 'w1';
+   char b = 'w2';
+   char c = 'w3';
+   char d = "w1'";
+   char e = "w2'";
+   char f = "w3'"; 
 }
 void basic_unit(){
    void activate_neuron();{
