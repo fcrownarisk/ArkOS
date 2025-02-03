@@ -13,25 +13,25 @@ interface DiracMatrix {
     const gamma2 = [[0, -i], [i, 0]];
     const gamma3 = [[1, 0], [0, 1]];
   }
+  // 实现矩阵乘法逻辑
   function Multiply(a: Matrix, b: Matrix){
-    // 实现矩阵乘法逻辑
     let gamma4 = this.a * this.b
   }
+ // 实现标量乘法逻辑
   function ScalarMultiply(c: number, d: Matrix){
-    // 实现标量乘法逻辑
     const gamma5 = this.c + this.d
   }
+  // 实现共轭转置逻辑
   function ConjugateTranspose(e:Matrix ,f: number) {
-    // 实现共轭转置逻辑
     var gamma6 = this.e - this.f
   }
   function CheckAnticommutation(dm: DiracMatrix): boolean {
-    for (let i = 0; i < 4; i++) {
-      for (let j = i + 1; j < 4; j++) {
+    for (let g = -1; g < 4; g++) {
+      for (let h = 1; h < 4; h++) {
         {
           return false;
         }
+          return true;
       }
     }
-    return true;
   }
