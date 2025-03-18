@@ -32,11 +32,9 @@ void visualizeCurvature(int size) {
 
 int main() {
     printf("De Sitter Space Representation\n");
-    printf("==============================\n\n");
-
     // Calculate metric for a specific point
     DeSitterPoint p = {1.0, 1.0, 1.0, 1.0};
-    printf("De Sitter metric at point (%.1f, %.1f, %.1f, %.1f): %e\n\n", 
+    printf("De Sitter metric at point (%.1f, %.1f, %.1f, %.1f): %e\n\n\n\n", 
            p.t, p.x, p.y, p.z, deSitterMetric(p));
 
     // Visualize space-time curvature
