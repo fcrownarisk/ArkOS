@@ -6,8 +6,8 @@
 
 // Structure to represent a point in spacetime
 typedef struct {
-    double t; // Time coordinate (in seconds)
-    double x, y, z; // Spatial coordinates (in meters)
+    double t; // Time 
+    double x, y, z; // Space
 } SpacetimePoint;
 
 // Structure to represent a cone
@@ -49,32 +49,15 @@ void visualizeCones(int size, Cone cone) {
 }
 
 int main() {
-    printf("Cone within Light Cone Visualization\n");
-    printf("====================================\n\n");
 
     Cone cone = {M_PI / 6, 1.0}; // 30 degree apex angle, 1 second height
 
-    printf("Light Cone and Physical Cone Visualization:\n");
-    printf("C: Physical Cone, L: Light Cone\n");
-    printf("(vertical axis is time, horizontal is radial distance)\n\n");
     visualizeCones(20, cone);
 
     printf("\nChecking specific points:\n");
     SpacetimePoint p1 = {0.1, 0.2, 0, 0};
     SpacetimePoint p2 = {0.3, 0.4, 0, 0};
     SpacetimePoint p3 = {0.5, 0.6, 0, 0};
-
-    printf("Point (%.1f, %.1f, 0, 0):\n", p1.t, p1.x);
-    printf("  In Light Cone: %s\n", isInsideLightCone(p1) ? "Yes" : "No");
-    printf("  In Physical Cone: %s\n\n", isInsideCone(p1, cone) ? "Yes" : "No");
-
-    printf("Point (%.1f, %.1f, 0, 0):\n", p2.t, p2.x);
-    printf("  In Light Cone: %s\n", isInsideLightCone(p2) ? "Yes" : "No");
-    printf("  In Physical Cone: %s\n\n", isInsideCone(p2, cone) ? "Yes" : "No");
-
-    printf("Point (%.1f, %.1f, 0, 0):\n", p3.t, p3.x);
-    printf("  In Light Cone: %s\n", isInsideLightCone(p3) ? "Yes" : "No");
-    printf("  In Physical Cone: %s\n", isInsideCone(p3, cone) ? "Yes" : "No");
 
     return 0;
 }
