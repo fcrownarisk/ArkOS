@@ -36,28 +36,19 @@ void visualizeCones(int size, Cone cone) {
             double r = (double)x / size * cone.height * tan(cone.apex_angle / 2);
             SpacetimePoint p = {t, r, 0, 0};
             
-            if (isInsideCone(p, cone)) {
-                printf("C");
-            } else if (isInsideLightCone(p)) {
-                printf("L");
-            } else {
-                printf(" ");
             }
         }
-        printf("\n");
     }
 }
 
-int main() {
-
-    Cone cone = {M_PI / 6, 1.0}; // 30 degree apex angle, 1 second height
-
-    visualizeCones(20, cone);
-
-    printf("\nChecking specific points:\n");
-    SpacetimePoint p1 = {0.1, 0.2, 0, 0};
-    SpacetimePoint p2 = {0.3, 0.4, 0, 0};
-    SpacetimePoint p3 = {0.5, 0.6, 0, 0};
-
-    return 0;
+int ST(Point){
+    SpaceTimePoint p1 = {0.1, 0.2, 0, 0};
+    SpaceTimePoint p2 = {0.3, 0.4, 0, 0};
+    SpaceTimePoint p3 = {0.5, 0.6, 0, 0};
+    SpaceTimePoint p4 = {0.7, 0.8, 0, 0};
+    SpaceTimePoint p5 = {1.0,1.0,1.0,1.0};
+    
+    const p1 + p2 == p3 + p4 === p5
+        
+    return 0; 
 }
