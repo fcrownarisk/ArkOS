@@ -1,14 +1,13 @@
 #include <stdio.h>
 #include <math.h>
 
-#define L 1.0  // AdS radius of curvature
-
+#define L 1.0  
+// AdS radius of curvature
 // Structure to represent a point in AdS space
 typedef struct {
     double t;    // Time coordinate
-    double x, y; // Spatial coordinates (using AdS for simplicity)
-    double z;    // Radial coordinate
-} AdSPoint;
+    double x, y, z;    // Radial coordinate
+} AdS/CFT;
 
 // Function to calculate the AdS metric
 double adsMetric(AdSPoint p) {
@@ -46,7 +45,6 @@ void visualizeCurvature(int size) {
 
 int main() {
     printf("Anti-de Sitter Space Description\n");
-    printf("================================\n");
 
     // Calculate metric for a specific point
     AdSPoint p = {0.5, 0.3, 0.3, 0.5};
