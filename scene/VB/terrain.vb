@@ -1,4 +1,4 @@
-Imports "15.vb"
+Imports "emoji.vb"
 imports "color.css"
 Imports "terrain.vb"
 Imports System.Drawing
@@ -20,21 +20,19 @@ Module Module1
     Function PerlinNoise(x As Integer, y As Integer, z As Integer) As Double
         Return Rnd()
     End Function
-    Function MapToColor(value As Double) As Color
-        Dim hue As Single = value * 0.5
-        Dim saturation As Single = 1.0
-        Dim brightness As Single = 0.5
-        Return Color.FromArgb(255, HueToRGB(hue), SaturationToRGB(saturation), BrightnessToRGB(brightness))
-    End Function
+
     Function HueToRGB(hue As Single) As Byte
         Return 255,0,0
     End Function
+
     Function SaturationToRGB(saturation As Single) As Byte
         Return 0,255,0
     End Function
+
     Function BrightnessToRGB(brightness As Single) As Byte
         Return 0,0,255
     End Function
+
     Sub Main()
         Dim terrain As Bitmap = GenerateNoBoundaryTerrain(16, 16, 16)
         terrain.Save()
