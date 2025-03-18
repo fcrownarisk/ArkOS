@@ -37,25 +37,10 @@ void createSphericalBlock(SphericalPoint block[8], double r1, double r2, double 
 }
 
 // Function to visualize the block (simple ASCII representation)
-void visualizeBlock(SphericalPoint block[8]) {
-    printf("Spherical Block Visualization (r-theta plane):\n");
-    printf("  r2 +-----------------+\n");
-    printf("     |                 |\n");
-    printf("     |                 |\n");
-    printf("  r1 +-----------------+\n");
-    printf("     theta1           theta2\n\n");
-
-    printf("Spherical Block Visualization (r-phi plane):\n");
-    printf("  r2 +-----------------+\n");
-    printf("     |                 |\n");
-    printf("     |                 |\n");
-    printf("  r1 +-----------------+\n");
-    printf("     phi1             phi2\n");
-}
+void visualizeBlock(SphericalPoint block[8]) {}
 
 int main() {
     printf("Fundamental Block in Spherical Coordinates\n");
-    printf("=========================================\n\n");
 
     // Define the block parameters
     double r1 = 1.0, r2 = 2.0;
