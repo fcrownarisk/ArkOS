@@ -59,11 +59,7 @@ void visualizeMovement(Position pos) {
 
 int main() {
     Position currentPos = {0, 0, 0};  // Start at origin
-
-    printf("Six Direction Movement Demonstration\n");
-    printf("====================================\n\n");
-
-    printf("Starting position:\n");
+    
     printPosition(currentPos);
     visualizeMovement(currentPos);
 
