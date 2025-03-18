@@ -43,24 +43,11 @@ void visualizeLightCone(int size) {
 }
 
 int main() {
-    printf("Light Cone in Spacetime\n");
-    printf("=======================\n\n");
-
     SpacetimeEvent origin = {0, 0, 0, 0};
     SpacetimeEvent event1 = {1, C*0.5, 0, 0}; // Timelike event
     SpacetimeEvent event2 = {1, C*2, 0, 0};   // Spacelike event
     SpacetimeEvent event3 = {1, C, 0, 0};     // Lightlike event
 
-    printf("Spacetime intervals from origin (0,0,0,0):\n");
-    printf("Event1 (1s, %.2fm, 0, 0): %.2f - %s\n", 
-           C*0.5, spacetimeInterval(origin, event1), intervalNature(spacetimeInterval(origin, event1)));
-    printf("Event2 (1s, %.2fm, 0, 0): %.2f - %s\n", 
-           C*2, spacetimeInterval(origin, event2), intervalNature(spacetimeInterval(origin, event2)));
-    printf("Event3 (1s, %.2fm, 0, 0): %.2f - %s\n\n", 
-           C, spacetimeInterval(origin, event3), intervalNature(spacetimeInterval(origin, event3)));
-
-    printf("2D Visualization of Light Cone:\n");
-    printf("(vertical axis is time, horizontal is one spatial dimension)\n");
     visualizeLightCone(21);
 
     return 0;
