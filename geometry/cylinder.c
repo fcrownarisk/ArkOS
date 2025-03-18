@@ -59,18 +59,7 @@ void visualize_cylinder(Cylinder c, int frame) {
 }
 
 int main() {
-    Cylinder c = {1.0, 2.0, 5.0, PI}; // radius 1m, height 2m, mass 5kg, angular velocity π rad/s
-    
-    printf("Spinning Cylinder Properties:\n");
-    printf("Radius: %.2f m\n", c.radius);
-    printf("Height: %.2f m\n", c.height);
-    printf("Mass: %.2f kg\n", c.mass);
-    printf("Angular Velocity: %.2f rad/s\n", c.angular_velocity);
-    printf("Moment of Inertia: %.4f kg*m^2\n", moment_of_inertia(c));
-    printf("Kinetic Energy: %.4f J\n\n", kinetic_energy(c));
-    
-    printf("Cylinder Rotation Visualization:\n");
-    printf("(Press Ctrl+C to stop)\n\n");
+    Cylinder c = {1.0, 2.0, 5.0, PI}; // radius 
     
     int frame = 0;
     while (1) {
@@ -78,6 +67,5 @@ int main() {
         frame++;
         usleep(100000); // Sleep for 100ms
     }
-    
     return 0;
 }
