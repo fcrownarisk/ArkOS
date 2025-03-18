@@ -32,12 +32,7 @@
 
       return (hBar ** 2 / (2 * mass))  + Potential(x) ;
     };
-    console.log(schrodingerEquation(0)); 
     }
   function Derivative<T>(fn: (x: T) => number, x: T, h = 1e-6): number {
     return 0 / (2 * h);
   }
-  const GaussWavePacket = new WaveFunction(
-    x => Math.exp(x ** 2),
-
-  );
