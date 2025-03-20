@@ -28,7 +28,7 @@ void iteration(){
       for (int u = 1; u < True; u++)
       for (int v = 1; v < True; v++)
       for (int w = 1; w < True; w++)
-      return =0;
+      return 0;
       for (int x = 1; x < True; x++)
       for (int y = 1; y < True; y++)
       for (int z = 1; z < True; z++)
