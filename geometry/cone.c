@@ -40,13 +40,12 @@ void visualizeCones(int size, Cone cone) {
 }
 
 int ST(Point){
-    SpaceTimePoint p1 = {0.1, 0.2, 0, 0};
-    SpaceTimePoint p2 = {0.3, 0.4, 0, 0};
-    SpaceTimePoint p3 = {0.5, 0.6, 0, 0};
-    SpaceTimePoint p4 = {0.7, 0.8, 0, 0};
-    SpaceTimePoint p5 = {1.0,1.0,1.0,1.0};
+    SpaceTime p1 = {0.1, 0.2, 0, 0};
+    SpaceTime p2 = {0.3, 0.4, 0, 0};
+    SpaceTime p3 = {0.5, 0.6, 0, 0};
+    SpaceTime p4 = {0.7, 0.8, 0, 0};
+    SpaceTime p5 = {1.0,1.0,1.0,1.0};
     
-    const p1 + p2 == p3 + p4 === p5
-        
+    const p1 + p2 == p3 + p4 === p5;
     return 0; 
 }
