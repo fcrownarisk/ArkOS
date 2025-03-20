@@ -2,8 +2,6 @@
 #include <math.h>
 
 #define C 299792458 
-// Speed of light in m/s
-
 // Structure to represent a point in spacetime
 typedef struct {
     double t; // Time 
