@@ -6,8 +6,8 @@
 
 // Structure to represent a cylinder
 typedef struct {
-    double radius;
-    double height;
+    int radius;
+    float height;
     double mass;
     double angular_velocity; // in radians per second
 } Cylinder;
