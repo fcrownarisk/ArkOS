@@ -1,7 +1,5 @@
-# ArkOS
-a first attempt shot on Arkknight
-I attempt to build brand new OS named ArkOS 
-Scene in the map including 
+# ArkOS 
+the map including 
    
     Extreme Weather,outside diaster,personality,mapinfo,Metaverse(Final Destination),multiworld(End Feild)
 
@@ -13,5 +11,3 @@ charactor can use swicth case to the inner side of the mirror is Final Destinati
 charactress can perform unique skill from the talent tree(84)branch.
 
     implement(inline), extends(extern)
-
-
